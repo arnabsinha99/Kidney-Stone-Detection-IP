@@ -2,7 +2,7 @@
 import cv2
 #from skimage.measure import compare_ssim
 import argparse
-import imutils
+#import imutils
 import numpy as np
 import matplotlib.pyplot as plt
 #change the path as per you configuration
@@ -19,7 +19,7 @@ def build_filters():
     filters = []
     ksize = 31
     for theta in np.arange(0, np.pi, np.pi / 32):
-        params = {'ksize': (ksize, ksize), 'sigma': 3.0, 'theta': theta, 'lambd': 12.0,
+        params = {'ksize': (ksize, ksize), 'sigma': 2.5, 'theta': theta, 'lambd': 15.0,
                   'gamma': 0.02, 'psi': 0, 'ktype': cv2.CV_32F}
         kern = cv2.getGaborKernel(**params)
         kern /= 1.5*kern.sum()
