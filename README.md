@@ -8,3 +8,6 @@ Links that we are referring to:-
 * [Level Set Method](https://wiseodd.github.io/techblog/2016/11/05/levelset-method/)
 
 * [Data Augmentation](https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-part-2-data-augmentation-c26971dc8ced)
+
+* [IEEE Link for Kidney Stone Detection]
+(https://ieeexplore.ieee.org/document/6572601)
