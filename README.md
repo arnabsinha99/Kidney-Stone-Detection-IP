@@ -9,5 +9,7 @@ Links that we are referring to:-
 
 * [Data Augmentation](https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-part-2-data-augmentation-c26971dc8ced)
 
-* [IEEE Link for Kidney Stone Detection]
-(https://ieeexplore.ieee.org/document/6572601)
+* [IEEE Link for Kidney Stone Detection](https://ieeexplore.ieee.org/document/6572601)
+
+* [US Detection of Calcification of Gallstones](https://onlinelibrary.wiley.com/doi/pdf/10.7863/jum.1984.3.3.123)
+
