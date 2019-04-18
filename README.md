@@ -15,3 +15,4 @@ Links that we are referring to:-
 
 * [Paper on Ultrasonic speckle suppressing](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=802756)
 
+* [Kidney Stone detection using matlab](https://www.youtube.com/watch?v=7Nxpa0cjOBE) 
