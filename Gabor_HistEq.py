@@ -5,8 +5,10 @@ import argparse
 #import imutils
 import numpy as np
 import matplotlib.pyplot as plt
+%matplotlib inline
 #change the path as per you configuration
-img = cv2.imread(r'C:\\Users\Arnab Sinha\Documents\\GitHub\\Kidney-Stone-Detection-IP\\images\\image3.jpg',0)
+
+img = cv2.imread(r'C:\\Users\\ANSHUL KIYAWAT\\Desktop\\image3.jpg',0)
 
 
 #sobely = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)
@@ -21,6 +23,7 @@ def build_filters():
     for theta in np.arange(0, np.pi, np.pi / 32):
         params = {'ksize': (ksize, ksize), 'sigma': 2.5, 'theta': theta, 'lambd': 15.0,
                   'gamma': 0.02, 'psi': 0, 'ktype': cv2.CV_32F}
+        
         kern = cv2.getGaborKernel(**params)
         kern /= 1.5*kern.sum()
         filters.append((kern, params))
@@ -48,4 +51,7 @@ plt.subplot(121), plt.imshow(img, cmap='gray')
 plt.title('Original'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(122), plt.imshow(equ, cmap='gray')
-plt.title('Histogram + Gabor'), plt.xticks([]), plt.yticks([])
+plt.title('Gabor Only'),plt.xticks([]),plt.yticks([])
+
+#plt.subplot(123), plt.imshow(equ, cmap='gray')
+#plt.title('Histogram + Gabor'), plt.xticks([]), plt.yticks([])
