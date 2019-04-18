@@ -13,3 +13,5 @@ Links that we are referring to:-
 
 * [US Detection of Calcification of Gallstones](https://onlinelibrary.wiley.com/doi/pdf/10.7863/jum.1984.3.3.123)
 
+* [Paper on Ultrasonic speckle suppressing](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=802756)
+
