@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 
 img = cv2.imread(r'C:\\Users\\ANSHUL KIYAWAT\\Desktop\\image2.jpg',0)
-img = cv2.medianBlur(img,5)
 
 ret, thresh = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
@@ -25,7 +24,7 @@ sure_bg = cv2.dilate(opening,kernel,iterations=3)
 
 # Finding sure foreground area
 dist_transform = cv2.distanceTransform(opening,cv2.DIST_L2,5)
-ret, sure_fg = cv2.threshold(dist_transform,0.7*dist_transform.max(),255,0)
+ret, sure_fg = cv2.threshold(dist_transform,0.1*dist_transform.max(),255,0)
 
 # Finding unknown region
 sure_fg = np.uint8(sure_fg)
